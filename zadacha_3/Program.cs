@@ -18,7 +18,7 @@ void FindCubeNumber(int number)
     int count = 1;
     while (count < number + 1)
     {
-        double result = Math.Pow(count, 3);
+        double result = Math.Pow(count, 3); // сделал дабл резалт так как через инт функция math выдает ошибку (дабл не удвется преобразовать в тип инт) поэтому сделал дабл
         Console.Write($"{result} ");
         count++;
     }
